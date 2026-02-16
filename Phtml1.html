@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice Session</title>
+        <style>
+            body{
+                background-color: black;
+                color:white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .darkmode{
+                color:rgb(0, 0, 0);
+                background-color: whitesmoke;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+        </style>
+        <style>
+            lable{
+                color:red;
+            }
+            input,select{
+                padding: 8px;
+                margin: 5px;
+                border-radius: 5px;
+                border:1px solid #cccccc;
+                cursor:pointer;
+            }
+            input[type="submit"], input[type="reset"]:hover
+            {
+                background-color:#5100ff;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="onecognizant.cognizant.com">
+            <h1>Cognizant HTML Registration form 1</h1>
+            <input type="button" id="toggle" class="darkmode" value="switch mode">
+            <script>
+                let tog=document.getElementById("toggle");
+                tog.addEventListener("click",function(){
+                    document.body.classList.toggle("darkmode");
+                });
+            </script>
+            <br><br>
+
+            <lable> Name: </lable>
+            <input type="text" id="full name" required placeholder="enter your name">
+            <br>
+
+            <lable> Phone Number: </lable>
+            <input type="number" id="num" placeholder="enter your phone number">
+            <br>
+
+            <lable> Email: </lable>
+            <input type="email" id="email">
+            <br>
+
+            <lable> Gender: </lable>
+            <input type="radio" id="male" name="gender" value="male">
+            <lable> Male: </lable>
+            <input type="radio" id="female" name="gender" vale="female">
+            <lable> Female: </lable>
+            <br>
+
+            <lable>Country</lable>
+            <select id="Country" name="country">
+                <option value="india">India</option>
+                <option value="USA">USA</option>
+                <option value="china" >China</option>
+            </select>
+            <br>
+
+            <lable> Upload Resume: </lable>
+            <input type="file" value="resume">
+            <br>
+
+            <lable> Date: </lable>
+            <input type="date" value="Register">
+            <br>
+
+            <ol>
+                <li>First Step</li>
+                <li>Second Step</li>
+                <li>Third Step</li>
+            </ol>
+
+            <ol>
+                <li>Apple</li>
+                <li>Samsung</li>
+                <li>Nothing</li>
+            </ol>
+            <br>
+
+            <h2 style="color:rgb(128, 0, 255)">This text is colorfull</h2>
+            <br>
+
+            <lable> Salary Range: </lable>
+            <input type="range" min="400000" max="1200000" name="salary" value="50"> 
+            <br>
+
+            <lable> URL: </lable>
+            <input type="url" value="salary"> 
+            <br>
+
+            <input type="submit" value="register">
+            <input type="reset" value="reset">
+        </form>
+    </body>
+</html>
